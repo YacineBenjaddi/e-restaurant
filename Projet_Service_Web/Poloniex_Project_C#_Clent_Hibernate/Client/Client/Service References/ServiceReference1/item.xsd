@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service/" targetNamespace="http://service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recherche" type="tns:recherche" />
+  <xs:element name="rechercheResponse" type="tns:rechercheResponse" />
+  <xs:complexType name="recherche">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rechercheResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:cryotCurrency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cryotCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="designation" type="xs:string" />
+      <xs:element minOccurs="0" name="EURO" type="xs:double" />
+      <xs:element name="num" type="xs:int" />
+      <xs:element minOccurs="0" name="USD" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

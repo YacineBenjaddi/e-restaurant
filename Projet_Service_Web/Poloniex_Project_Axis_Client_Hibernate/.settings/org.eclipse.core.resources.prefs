@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/service/CryotCurrency.java=UTF-8
+encoding//src/service/Poloniex.java=UTF-8
+encoding//src/service/PoloniexPortBindingStub.java=UTF-8
+encoding//src/service/PoloniexService.java=UTF-8
+encoding//src/service/PoloniexServiceLocator.java=UTF-8

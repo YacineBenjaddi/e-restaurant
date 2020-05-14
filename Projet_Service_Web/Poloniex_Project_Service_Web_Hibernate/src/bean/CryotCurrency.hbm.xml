@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="bean.CryotCurrency" table="bit">
+      <meta attribute="class-description">
+         cette classe contient les details des CryotCurrency  
+      </meta>
+      <id name="num"  column="num">
+         <generator class="native"/>
+      </id>
+      <property name="designation" type="string"/> 
+       <property name="EURO" type="double"/>   
+        <property name="USD" type="double"/>  
+   </class>
+</hibernate-mapping>
